@@ -13,6 +13,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// this function generates random password with specified criteria
 var generatePassword = function () {
   // password length 8 > 128 character
   var passwordLength = window.prompt("Enter password length min 8 to max 128 characters.");
@@ -46,7 +47,7 @@ var generatePassword = function () {
   // Specialcharacters
   var specialCharacters = window.confirm("Do you want a special character in your password?");
   if (specialCharacters) {
-    characters += "!@#$%^&*()"; 
+    characters += "!@#$%^&*()";
     console.log("SpecialCharacter: Y");
   }
 
@@ -57,16 +58,14 @@ var generatePassword = function () {
     console.log("Numbers: Y");
   }
   var pwd = "";
-  console.log("characters.length: "+characters.length);
+  console.log("characters.length: " + characters.length);
   for (var i = 0; i < passwordLength; i++) {
     // Get random index from array of characters
-    var index = Math.floor(Math.random() * characters.length);
+    var index = Math.floor(Math.random() * characters.length); // generates random number for character length
     pwd += characters.substring(index, index + 1);
   }
-  console.log("pwd " + pwd );
+  console.log("pwd " + pwd);
 
   return pwd;
-
-
 
 }
