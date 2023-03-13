@@ -46,7 +46,6 @@ The following image shows the web application's appearance and functionality:
 
 ## Deployment details
 
-You are required to submit the following for review:
 
 * The URL of the deployed application : https://nisha4r.github.io/generate-password/
 
