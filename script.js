@@ -57,6 +57,18 @@ var generatePassword = function () {
     characters += "0123456789";
     console.log("Numbers: Y");
   }
+
+  var isOneOptionSelected = false;
+  if (upperCase || lowerCase || numbers || specialCharacters) {
+    isOneOptionSelected = true;
+  }
+
+  // Atleast one criteria should be selected to generate password, else return to page.
+  if(!isOneOptionSelected){
+    window.alert("Atleast one criteria should be selected, please try again");
+    return;
+  }
+
   var pwd = "";
   console.log("characters.length: " + characters.length);
   for (var i = 0; i < passwordLength; i++) {
