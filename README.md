@@ -1,5 +1,5 @@
-# 03 JavaScript: Password Generator
-# generate-password
+# Password Generator
+
 Generates password based employee input and criteria selected
 
 ## Your Task
